@@ -1,0 +1,73 @@
+@charset"UTF-8";
+@import url(reset.css);
+
+h1{
+    text-align: center;
+    margin: 40px;
+    color: #000;
+}
+
+div#wrap{ border: 1px solid #000;
+    width: 1300px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+div#slide{ border: 4px solid #08f;
+    width: 1200px;
+    height: 370px;
+}
+
+div#shuttleFrame{ border: 4px solid #f80;
+    width: 1200px;
+    height: 370px;
+
+}
+#slide a{
+    position: relative;
+    display: inline-block; /*자식요소 a가 부모요소 shuttleFrame 크기만큼 지정됨*/
+
+    position: absolute; /* 전환형--> 이미지 3개가 하나의 위치에 존재 */
+}
+
+#slide a:not(:first-child){
+    display: none;
+/*
+    visibility: hidden;
+*/
+}
+
+div#slide div#shuttleFrame span{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid #aaa;
+    border-radius: 15px;
+    padding: 6px 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
